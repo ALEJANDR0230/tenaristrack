@@ -1,0 +1,5 @@
+# HTTPS automático (Let's Encrypt). El dominio debe apuntar a la IP del servidor.
+{$DOMINIO} {
+	encode zstd gzip
+	reverse_proxy app:4000
+}
